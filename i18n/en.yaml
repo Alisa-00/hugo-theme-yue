@@ -7,7 +7,6 @@ tableOfContents: Table of Contents
 colon: ':' # Taxonomy, e.g. Tags:
 previousPage: "Prev: " # Page nav
 nextPage: "Next: " # Page nav
-themeInfo: Built with {{ .hugo }} and {{ .yue }} # Footer
 
 # 404 page, e.g. /en/404.html
 404Message: The page you visited was not found.
