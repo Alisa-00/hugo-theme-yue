@@ -1,9 +1,10 @@
 {{ define "main" }}
   <h1>{{ .Title }}</h1>
-  {{ partial "main/dates.html" . }}
+  {{ if ne .Title "About" }}
+    {{ partial "main/dates.html" . }}
+  {{ end }}
   {{ partial "page/toc.html" . }}
   {{ .Content }}
   {{ partial "page/terms.html" (dict "taxonomy" "tags" "page" .) }}
-  {{ partial "page/terms.html" (dict "taxonomy" "categories" "page" .) }}
   {{ partial "page/page_nav.html" . }}
 {{ end }}
